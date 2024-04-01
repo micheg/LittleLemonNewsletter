@@ -3,6 +3,8 @@ export const BaseStyle = {
     flex: 1,
     padding: 24,
     backgroundColor: 'white',
+    alignItems: 'center',
+    flexDirection: 'colum',
   },
   title: {
     color: '#333333',

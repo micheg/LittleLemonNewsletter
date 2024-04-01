@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     padding: 8,
+    width: '100%',
   },
   disabled: {
     backgroundColor: 'grey',

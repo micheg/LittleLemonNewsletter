@@ -18,7 +18,7 @@ const SubscribeScreen = () => {
     <View style={styles.container}>
       <Image
         style={styles.logo}
-        source={require('../assets/little-lemon-logo-grey.png')}
+        source={require('../imgs/little-lemon-logo-grey.png')}
       />
       <Text style={styles.title}>Subscribe to our newsletter...</Text>
       <TextInput
@@ -41,8 +41,13 @@ const SubscribeScreen = () => {
 };
 
 const PageStyle = {
+  container: {
+    justifyContent: 'flex-start',
+  },
   logo: {
     marginBottom: 32,
+    height: 100,
+    width: 200,
   },
   input: {
     height: 40,
@@ -51,10 +56,11 @@ const PageStyle = {
     borderWidth: 1,
     padding: 10,
     fontSize: 16,
-    borderColor: 'EDEFEE',
+    borderColor: '#EDEFEE',
+    width: '100%',
   },
 };
 
-const styles = StyleSheet.create(_.merge(BaseStyle, PageStyle));
+const styles = StyleSheet.create(_.merge({}, BaseStyle, PageStyle));
 
 export default SubscribeScreen;

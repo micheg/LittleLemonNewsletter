@@ -1,3 +1,34 @@
+# Author Nots
+
+## About
+
+This is the final assignment of the course react native by meta, which I took on coursera.
+The project uses neither expo nor snack, I wanted to try using RN Cli.
+I tried it on a mac m1, with a native IOS simulator and an Android emulator from Genymotion.
+I tried to follow Prettier's style even though I am for the Allman style, but I tried to conform to the 'modern' js style.
+
+For the react native navigation package, it was necessary to make a pod configuration and a change to the android activity.
+
+(npx pod-install ios and slightly more complicated for android)
+
+## Difference from coursera
+
+Probably react-navigation is now more advanced than when the course was written, in particular stack navigation is used like this:
+
+```js
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+const Stack = createNativeStackNavigator();
+```
+
+## install and run
+
+```bash
+npm install
+npm start
+```
+
+# Build and install notes. (from react native cli)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
